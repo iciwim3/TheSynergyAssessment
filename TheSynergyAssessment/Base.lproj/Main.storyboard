@@ -1,24 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Designable View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DesignableViewController" customModule="TheSynergyAssessment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letterC" translatesAutoresizingMaskIntoConstraints="NO" id="1Kh-IL-ADO">
+                                <rect key="frame" x="16" y="50" width="31" height="37"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letterA" translatesAutoresizingMaskIntoConstraints="NO" id="I0m-sr-fGk">
+                                <rect key="frame" x="323" y="50" width="36" height="36"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letterH" translatesAutoresizingMaskIntoConstraints="NO" id="UkO-Cc-W0c">
+                                <rect key="frame" x="322" y="602" width="37" height="35"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letterS" translatesAutoresizingMaskIntoConstraints="NO" id="zsa-2k-0ap">
+                                <rect key="frame" x="16" y="600" width="25" height="37"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Synergy Assessment by:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTM-I9-kzN">
+                                <rect key="frame" x="102.5" y="170" width="170" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="36x-np-PD5"/>
+                                    <constraint firstAttribute="width" constant="170" id="UR1-Ml-7o4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RPLogo" translatesAutoresizingMaskIntoConstraints="NO" id="MVq-xk-uqE">
+                                <rect key="frame" x="112.5" y="305" width="150" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="7mR-Bc-QdN"/>
+                                    <constraint firstAttribute="width" constant="150" id="FPx-E1-hD0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UkO-Cc-W0c" secondAttribute="bottom" constant="30" id="3fW-yS-x6m"/>
+                            <constraint firstItem="zsa-2k-0ap" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6ye-xh-p4r"/>
+                            <constraint firstItem="MVq-xk-uqE" firstAttribute="top" secondItem="UTM-I9-kzN" secondAttribute="bottom" constant="15" id="7fE-NF-Hyi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I0m-sr-fGk" secondAttribute="trailing" constant="16" id="Dh3-BY-83q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UkO-Cc-W0c" secondAttribute="trailing" constant="16" id="G52-bE-LNC"/>
+                            <constraint firstItem="1Kh-IL-ADO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="G5j-ml-fev"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zsa-2k-0ap" secondAttribute="bottom" constant="30" id="K46-Rn-Cso"/>
+                            <constraint firstItem="I0m-sr-fGk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="LCs-Rx-qEx"/>
+                            <constraint firstItem="UTM-I9-kzN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="MOh-ln-BJf"/>
+                            <constraint firstItem="MVq-xk-uqE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dh0-N4-Mls"/>
+                            <constraint firstItem="UTM-I9-kzN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e68-3U-P51"/>
+                            <constraint firstItem="1Kh-IL-ADO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="tig-ch-KlP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="lightStatusBar" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="26.53673163418291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="RPLogo" width="151" height="131"/>
+        <image name="letterA" width="36" height="36"/>
+        <image name="letterC" width="31" height="37"/>
+        <image name="letterH" width="37" height="35"/>
+        <image name="letterS" width="25" height="37"/>
+    </resources>
 </document>
