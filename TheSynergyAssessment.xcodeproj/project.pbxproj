@@ -13,6 +13,7 @@
 		4381B0C4217AC4D100D14210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4381B0C3217AC4D100D14210 /* Assets.xcassets */; };
 		4381B0C7217AC4D100D14210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4381B0C5217AC4D100D14210 /* LaunchScreen.storyboard */; };
 		4381B0CF217AD35500D14210 /* DesignableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4381B0CE217AD35500D14210 /* DesignableViewController.swift */; };
+		43EFC109217BCDF30054ADFE /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EFC108217BCDF30054ADFE /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4381B0C6217AC4D100D14210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4381B0C8217AC4D100D14210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4381B0CE217AD35500D14210 /* DesignableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableViewController.swift; sourceTree = "<group>"; };
+		43EFC108217BCDF30054ADFE /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				4381B0BC217AC4CD00D14210 /* AppDelegate.swift */,
 				4381B0BE217AC4CD00D14210 /* ViewController.swift */,
 				4381B0CE217AD35500D14210 /* DesignableViewController.swift */,
+				43EFC108217BCDF30054ADFE /* RoundedButton.swift */,
 				4381B0C0217AC4CD00D14210 /* Main.storyboard */,
 				4381B0C3217AC4D100D14210 /* Assets.xcassets */,
 				4381B0C5217AC4D100D14210 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				4381B0BF217AC4CD00D14210 /* ViewController.swift in Sources */,
 				4381B0CF217AD35500D14210 /* DesignableViewController.swift in Sources */,
 				4381B0BD217AC4CD00D14210 /* AppDelegate.swift in Sources */,
+				43EFC109217BCDF30054ADFE /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
