@@ -1,5 +1,5 @@
 //
-//  DesignableViewController.swift
+//  FirstVC.swift
 //  TheSynergyAssessment
 //
 //  Created by Sain-R Edwards on 10/19/18.
@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class DesignableViewController: UIViewController {
+class FirstVC: UIViewController {
     
     @IBInspectable var lightStatusBar: Bool = false
     
