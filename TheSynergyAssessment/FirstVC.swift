@@ -29,4 +29,7 @@ class FirstVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func startAssessmentTapped(_ sender: Any) {
+        
+    }
 }
