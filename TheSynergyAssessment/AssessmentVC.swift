@@ -8,14 +8,16 @@
 
 import UIKit
 
-class AssessmentVC: UIViewController {
+class AssessmentVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var statementTableview: UITableView!
     @IBOutlet weak var dialogView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        statementTableview.delegate = self
+        statementTableview.dataSource = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -25,6 +27,17 @@ class AssessmentVC: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: STATEMENT_CELL, for: indexPath) as! StatementCell
+        return cell
+    }
+    
+    
     
 
 }
