@@ -185,21 +185,21 @@
                                                 <rect key="frame" x="0.0" y="66" width="310" height="416"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StatementCell" rowHeight="100" id="IRC-hL-IJi" customClass="StatementCell" customModule="TheSynergyAssessment" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="28" width="310" height="100"/>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StatementCell" rowHeight="120" id="IRC-hL-IJi" customClass="StatementCell" customModule="TheSynergyAssessment" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="28" width="310" height="120"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IRC-hL-IJi" id="t79-Bh-JlZ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="310" height="100"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="310" height="120"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xXJ-QC-8af">
-                                                                    <rect key="frame" x="5" y="5" width="300" height="90"/>
+                                                                    <rect key="frame" x="5" y="5" width="300" height="110"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8dG-al-5ss" userLabel="Container SV">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="90"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="110"/>
                                                                             <subviews>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="CPD-Gc-63L">
-                                                                                    <rect key="frame" x="0.0" y="10" width="50" height="70"/>
+                                                                                    <rect key="frame" x="0.0" y="20" width="50" height="70"/>
                                                                                     <subviews>
                                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rL-Nm-4yW" customClass="RoundedButton" customModule="TheSynergyAssessment" customModuleProvider="target">
                                                                                             <rect key="frame" x="10" y="0.0" width="30" height="32"/>
@@ -233,7 +233,7 @@
                                                                                     </constraints>
                                                                                 </stackView>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ZAc-eE-3Oo">
-                                                                                    <rect key="frame" x="50" y="10" width="50" height="70"/>
+                                                                                    <rect key="frame" x="50" y="20" width="50" height="70"/>
                                                                                     <subviews>
                                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulO-Jh-0mh" customClass="RoundedButton" customModule="TheSynergyAssessment" customModuleProvider="target">
                                                                                             <rect key="frame" x="10" y="0.0" width="30" height="32"/>
@@ -267,7 +267,7 @@
                                                                                     </constraints>
                                                                                 </stackView>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Xhd-Xh-zJt">
-                                                                                    <rect key="frame" x="100" y="11" width="200" height="68"/>
+                                                                                    <rect key="frame" x="100" y="21" width="200" height="68"/>
                                                                                     <subviews>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="People feel like I sometimes give too much to others" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2og-ZR-znO">
                                                                                             <rect key="frame" x="1" y="0.0" width="198" height="36"/>
