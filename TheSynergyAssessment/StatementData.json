@@ -1,0 +1,302 @@
+[
+  {
+    "statements": [
+      "I enjoy doing new things.", 
+      "I like to research things.",
+      "I'm responsible.",
+      "I enjoy bringing people together."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "I like being spontaneous.", 
+      "I like to invent new ways to do things.",
+      "I like to plan things out.",
+      "I enjoy being a team player."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "I often take risks.", 
+      "I do my job with accuracy and efficiency.",
+      "I pay close attention to deadlines.",
+      "I thrive in environments that are highly communicative."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "I'm always having fun.", 
+      "I prefer working alone.",
+      "I'm always on time.",
+      "I'm attentive to the needs of others."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "Going on new adventures is important to me.", 
+      "Solving problems is important to me.",
+      "Saving money is important to me.",
+      "Honesty and openness is important to me."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "I'm unpredictable.", 
+      "I'm knowledgeable.",
+      "I'm organized.",
+      "I'm personable."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "I value excitement.", 
+      "I value privacy.",
+      "I value loyalty.",
+      "I value others."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "I have a blast.", 
+      "I see outside the box.",
+      "I see things as black and white.",
+      "I inspire others."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "I'm skilled at many things.", 
+      "I study things carefully.",
+      "I make wise decisions.",
+      "I go beneath the surface with others."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "I'm very courageous.", 
+      "I'm very competent.",
+      "I'm very practical.",
+      "I'm very authentic."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "I value speed.", 
+      "I value fairness.",
+      "I value traditions.",
+      "I value relationships."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "I'm resourceful.", 
+      "I'm a visionary.",
+      "I'm a concerned helper.",
+      "I'm flexible."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "I have great instincts.", 
+      "I have intelligence.",
+      "I have standards.",
+      "I have creative genius."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "Stinginess is my pet peeve.", 
+      "Attention seeking is my pet peeve.",
+      "Lateness is my pet peeve.",
+      "Insensitivity is my pet peeve."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "I am a free thinker.", 
+      "I am independent.",
+      "I am committed.",
+      "I am motivating."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "It's important to realize relationships are exciting.", 
+      "It's important to realize relationships are hard.",
+      "It's important to realize relationships are serious.",
+      "It's important to realize relationships are beautiful."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "I focus on competition.", 
+      "I focus on making smart decisions.",
+      "I focus on getting my work done.",
+      "I focus on using my imagination."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "I care about the experience.", 
+      "I care about what makes sense.",
+      "I care about what's right.",
+      "I care about people."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "I cannot deal with micromanaging.", 
+      "I cannot deal with incompetence.",
+      "I cannot deal with disorganization.",
+      "I cannot deal with rudeness."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "I must get started.", 
+      "I must think this through.",
+      "I must plan ahead.",
+      "I must help."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "I just get things done.", 
+      "I use my brain power.",
+      "I'm proud to serve.",
+      "I never burn bridges."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "I often hear that I'm rude.", 
+      "I often struggle to make decisions.",
+      "I often worry.",
+      "I often avoid conflict."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "I could be more considerate of people.", 
+      "I could be less standoffish.",
+      "I could be more relaxed.",
+      "I could be more upfront with people."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "People sometimes feel I'm too impulsive.", 
+      "People sometimes feel I'm a know it all.",
+      "People sometimes feel I'm too strict.",
+      "People sometimes feel I give too much to others."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  },
+  {
+    "statements": [
+      "I color outside the lines.", 
+      "I think work is play.",
+      "I'm very detailed oriented.",
+      "I thrive off of interaction."
+    ],
+    "catalystIndex": 0,
+    "analystIndex": 1,
+    "stabilizerIndex": 2,
+    "harmonizerIndex": 3
+  }
+]

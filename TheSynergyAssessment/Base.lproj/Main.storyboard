@@ -185,7 +185,7 @@
                                                 <rect key="frame" x="0.0" y="66" width="310" height="416"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StatementCell" rowHeight="120" id="IRC-hL-IJi" customClass="StatementCell" customModule="TheSynergyAssessment" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StatementCell" rowHeight="120" id="IRC-hL-IJi">
                                                         <rect key="frame" x="0.0" y="28" width="310" height="120"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IRC-hL-IJi" id="t79-Bh-JlZ">
@@ -269,8 +269,8 @@
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Xhd-Xh-zJt">
                                                                                     <rect key="frame" x="100" y="21" width="200" height="68"/>
                                                                                     <subviews>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="People feel like I sometimes give too much to others" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2og-ZR-znO">
-                                                                                            <rect key="frame" x="1" y="0.0" width="198" height="36"/>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" text="I am valueable and deserve to receive blessings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2og-ZR-znO">
+                                                                                            <rect key="frame" x="3" y="0.0" width="194" height="36"/>
                                                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                             <nil key="highlightedColor"/>
@@ -336,7 +336,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHn-4t-9yg" userLabel="Dialog Viiew">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHn-4t-9yg" userLabel="Dialog View">
                                         <rect key="frame" x="34" y="102" width="308" height="462"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9pg-it-3b4">
@@ -390,6 +390,9 @@
                                                                 <real key="value" value="5"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="dialogOkButtonTapped:" destination="FYL-MR-rar" eventType="touchUpInside" id="QSR-TP-KWj"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -455,7 +458,9 @@
                         <viewLayoutGuide key="safeArea" id="EjI-fm-9DS"/>
                     </view>
                     <connections>
+                        <outlet property="assessmentStackView" destination="MVN-Kv-fyi" id="akW-e1-5fy"/>
                         <outlet property="dialogView" destination="lHn-4t-9yg" id="Cdi-ha-DW6"/>
+                        <outlet property="nextButton" destination="mvb-VT-bdf" id="qL7-59-vHU"/>
                         <outlet property="statementTableview" destination="wwN-Ok-KM2" id="U2R-e2-qJ5"/>
                     </connections>
                 </viewController>

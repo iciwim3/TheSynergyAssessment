@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4319DCE52185F6AE00BDC498 /* StatementData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4319DCE42185F6AE00BDC498 /* StatementData.json */; };
 		4368E93C21850B5D005BB862 /* Assessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4368E93B21850B5D005BB862 /* Assessment.swift */; };
 		4368E93E21850C18005BB862 /* AssessmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4368E93D21850C18005BB862 /* AssessmentModel.swift */; };
 		4381B0BD217AC4CD00D14210 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4381B0BC217AC4CD00D14210 /* AppDelegate.swift */; };
@@ -16,12 +17,11 @@
 		4381B0CF217AD35500D14210 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4381B0CE217AD35500D14210 /* FirstVC.swift */; };
 		439EFED22181D95700426CC1 /* AssessmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439EFED12181D95700426CC1 /* AssessmentVC.swift */; };
 		43C5C4A62182C0CE00FA6AAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5C4A52182C0CE00FA6AAE /* Constants.swift */; };
-		43C5C4A82182C17400FA6AAE /* StatementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5C4A72182C17400FA6AAE /* StatementCell.swift */; };
-		43C65BC12185580400001BE5 /* AssessmentJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 43C65BC02185580400001BE5 /* AssessmentJSON.json */; };
 		43EFC109217BCDF30054ADFE /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EFC108217BCDF30054ADFE /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4319DCE42185F6AE00BDC498 /* StatementData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StatementData.json; sourceTree = "<group>"; };
 		4368E93B21850B5D005BB862 /* Assessment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
 		4368E93D21850C18005BB862 /* AssessmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentModel.swift; sourceTree = "<group>"; };
 		4381B0B9217AC4CD00D14210 /* TheSynergyAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheSynergyAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,8 +33,6 @@
 		4381B0CE217AD35500D14210 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
 		439EFED12181D95700426CC1 /* AssessmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentVC.swift; sourceTree = "<group>"; };
 		43C5C4A52182C0CE00FA6AAE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		43C5C4A72182C17400FA6AAE /* StatementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementCell.swift; sourceTree = "<group>"; };
-		43C65BC02185580400001BE5 /* AssessmentJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AssessmentJSON.json; sourceTree = "<group>"; };
 		43EFC108217BCDF30054ADFE /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,8 +72,7 @@
 				439EFED12181D95700426CC1 /* AssessmentVC.swift */,
 				4368E93B21850B5D005BB862 /* Assessment.swift */,
 				4368E93D21850C18005BB862 /* AssessmentModel.swift */,
-				43C65BC02185580400001BE5 /* AssessmentJSON.json */,
-				43C5C4A72182C17400FA6AAE /* StatementCell.swift */,
+				4319DCE42185F6AE00BDC498 /* StatementData.json */,
 				43EFC108217BCDF30054ADFE /* RoundedButton.swift */,
 				4381B0C0217AC4CD00D14210 /* Main.storyboard */,
 				4381B0C3217AC4D100D14210 /* Assets.xcassets */,
@@ -144,9 +141,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4381B0C7217AC4D100D14210 /* LaunchScreen.storyboard in Resources */,
+				4319DCE52185F6AE00BDC498 /* StatementData.json in Resources */,
 				4381B0C4217AC4D100D14210 /* Assets.xcassets in Resources */,
 				4381B0C2217AC4CD00D14210 /* Main.storyboard in Resources */,
-				43C65BC12185580400001BE5 /* AssessmentJSON.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +156,6 @@
 			files = (
 				4368E93C21850B5D005BB862 /* Assessment.swift in Sources */,
 				43C5C4A62182C0CE00FA6AAE /* Constants.swift in Sources */,
-				43C5C4A82182C17400FA6AAE /* StatementCell.swift in Sources */,
 				439EFED22181D95700426CC1 /* AssessmentVC.swift in Sources */,
 				4381B0CF217AD35500D14210 /* FirstVC.swift in Sources */,
 				4381B0BD217AC4CD00D14210 /* AppDelegate.swift in Sources */,

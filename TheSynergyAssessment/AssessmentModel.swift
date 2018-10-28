@@ -25,7 +25,7 @@ class AssessmentModel {
     func getLocalJsonFile() {
         
         // Get a path to the json file in our app bundle
-        let path = Bundle.main.path(forResource: "AssessmentJSON", ofType: ".json")
+        let path = Bundle.main.path(forResource: "StatementData", ofType: ".json")
         
         guard path != nil else {
             print("Can't find the json file")

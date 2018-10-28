@@ -10,9 +10,10 @@ import Foundation
 
 struct Assessment: Codable {
     
-    var statementNumber: Int?
-    var category: String?
-    var statement: String?
-    var categoryIndex: Int?
+    var statements: [String]?
+    var catalystIndex: Int?
+    var analystIndex: Int?
+    var stabilizerIndex: Int?
+    var harmonizerIndex: Int?
     
 }
