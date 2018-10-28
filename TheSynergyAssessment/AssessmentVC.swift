@@ -8,13 +8,24 @@
 
 import UIKit
 
-class AssessmentVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class AssessmentVC: UIViewController, UITableViewDelegate, UITableViewDataSource, AssessmentProtocol {
+    
+    
+    var model = AssessmentModel()
+    var statements = [Assessment]()
+    var catalystIndex = 0
+    var analystIndex = 0
+    var stabilizerIndex = 0
+    var harmonizerIndex = 0
     
     @IBOutlet weak var statementTableview: UITableView!
     @IBOutlet weak var dialogView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        model.delegate = self
+        model.getStatements()
 
         statementTableview.delegate = self
         statementTableview.dataSource = self
@@ -37,7 +48,10 @@ class AssessmentVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         return cell
     }
     
+    // MARK: - AssessmentProtocol methods
     
-    
+    func retrieveAssessment(statements: [Assessment]) {
+        print("Yo, statements have returned!")
+    }
 
 }

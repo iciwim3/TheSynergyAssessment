@@ -172,17 +172,17 @@
                                             <constraint firstAttribute="width" constant="40" id="jMR-IQ-V6T"/>
                                         </constraints>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MVN-Kv-fyi">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="MVN-Kv-fyi">
                                         <rect key="frame" x="32" y="100" width="310" height="482"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rank the statements as they relate to you with 1 being most like you and 4 being least like you." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6z-fc-91b">
-                                                <rect key="frame" x="0.0" y="0.0" width="310" height="5.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="310" height="61"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wwN-Ok-KM2">
-                                                <rect key="frame" x="0.0" y="5.5" width="310" height="476.5"/>
+                                                <rect key="frame" x="0.0" y="66" width="310" height="416"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StatementCell" rowHeight="100" id="IRC-hL-IJi" customClass="StatementCell" customModule="TheSynergyAssessment" customModuleProvider="target">
@@ -199,12 +199,15 @@
                                                                             <rect key="frame" x="0.0" y="0.0" width="300" height="90"/>
                                                                             <subviews>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="CPD-Gc-63L">
-                                                                                    <rect key="frame" x="0.0" y="12" width="50" height="66"/>
+                                                                                    <rect key="frame" x="0.0" y="10" width="50" height="70"/>
                                                                                     <subviews>
                                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rL-Nm-4yW" customClass="RoundedButton" customModule="TheSynergyAssessment" customModuleProvider="target">
-                                                                                            <rect key="frame" x="10" y="0.0" width="30" height="30"/>
+                                                                                            <rect key="frame" x="10" y="0.0" width="30" height="32"/>
                                                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                            <state key="normal" title="1"/>
+                                                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                                                            <state key="normal" title="1">
+                                                                                                <color key="titleColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                            </state>
                                                                                             <userDefinedRuntimeAttributes>
                                                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                                                     <real key="value" value="6"/>
@@ -212,9 +215,12 @@
                                                                                             </userDefinedRuntimeAttributes>
                                                                                         </button>
                                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBW-V4-hML" customClass="RoundedButton" customModule="TheSynergyAssessment" customModuleProvider="target">
-                                                                                            <rect key="frame" x="10" y="36" width="30" height="30"/>
+                                                                                            <rect key="frame" x="10" y="38" width="30" height="32"/>
                                                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                            <state key="normal" title="3"/>
+                                                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                                                            <state key="normal" title="3">
+                                                                                                <color key="titleColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                            </state>
                                                                                             <userDefinedRuntimeAttributes>
                                                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                                                     <real key="value" value="6"/>
@@ -227,12 +233,15 @@
                                                                                     </constraints>
                                                                                 </stackView>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ZAc-eE-3Oo">
-                                                                                    <rect key="frame" x="50" y="12" width="50" height="66"/>
+                                                                                    <rect key="frame" x="50" y="10" width="50" height="70"/>
                                                                                     <subviews>
                                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulO-Jh-0mh" customClass="RoundedButton" customModule="TheSynergyAssessment" customModuleProvider="target">
-                                                                                            <rect key="frame" x="10" y="0.0" width="30" height="30"/>
+                                                                                            <rect key="frame" x="10" y="0.0" width="30" height="32"/>
                                                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                            <state key="normal" title="2"/>
+                                                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                                                            <state key="normal" title="2">
+                                                                                                <color key="titleColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                            </state>
                                                                                             <userDefinedRuntimeAttributes>
                                                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                                                     <real key="value" value="6"/>
@@ -240,9 +249,12 @@
                                                                                             </userDefinedRuntimeAttributes>
                                                                                         </button>
                                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vd-C6-5ZC" customClass="RoundedButton" customModule="TheSynergyAssessment" customModuleProvider="target">
-                                                                                            <rect key="frame" x="10" y="36" width="30" height="30"/>
+                                                                                            <rect key="frame" x="10" y="38" width="30" height="32"/>
                                                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                            <state key="normal" title="4"/>
+                                                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                                                            <state key="normal" title="4">
+                                                                                                <color key="titleColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                            </state>
                                                                                             <userDefinedRuntimeAttributes>
                                                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                                                     <real key="value" value="6"/>
@@ -254,20 +266,22 @@
                                                                                         <constraint firstAttribute="width" constant="50" id="7sq-aj-Psj"/>
                                                                                     </constraints>
                                                                                 </stackView>
-                                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Xhd-Xh-zJt">
-                                                                                    <rect key="frame" x="100" y="1" width="200" height="88.5"/>
+                                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Xhd-Xh-zJt">
+                                                                                    <rect key="frame" x="100" y="11" width="200" height="68"/>
                                                                                     <subviews>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="I like to research things especially when it gets me going all night" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2og-ZR-znO">
-                                                                                            <rect key="frame" x="9.5" y="0.0" width="181" height="52.5"/>
-                                                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="People feel like I sometimes give too much to others" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2og-ZR-znO">
+                                                                                            <rect key="frame" x="1" y="0.0" width="198" height="36"/>
+                                                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
                                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nt7-6H-Tql" customClass="RoundedButton" customModule="TheSynergyAssessment" customModuleProvider="target">
-                                                                                            <rect key="frame" x="72.5" y="57.5" width="55" height="31"/>
+                                                                                            <rect key="frame" x="83.5" y="39" width="33" height="29"/>
                                                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                                                                            <state key="normal" title="Refresh"/>
+                                                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                                                            <state key="normal" title="Clear">
+                                                                                                <color key="titleColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                            </state>
                                                                                             <userDefinedRuntimeAttributes>
                                                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                                                     <real key="value" value="4"/>
@@ -283,7 +297,7 @@
                                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </stackView>
                                                                     </subviews>
-                                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.70166703345070425" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="0.698393485915493" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="trailing" secondItem="8dG-al-5ss" secondAttribute="trailing" id="VVj-xz-myP"/>
                                                                         <constraint firstAttribute="bottom" secondItem="8dG-al-5ss" secondAttribute="bottom" id="hD7-Db-FAc"/>
@@ -306,6 +320,22 @@
                                             </tableView>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvb-VT-bdf" customClass="RoundedButton" customModule="TheSynergyAssessment" customModuleProvider="target">
+                                        <rect key="frame" x="152.5" y="597" width="70" height="35"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="qps-kJ-mOM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHn-4t-9yg" userLabel="Dialog Viiew">
                                         <rect key="frame" x="34" y="102" width="308" height="462"/>
                                         <subviews>
@@ -389,7 +419,9 @@
                                     <constraint firstItem="lHn-4t-9yg" firstAttribute="leading" secondItem="1gf-ro-peR" secondAttribute="leading" constant="34" id="Ehc-eD-y8C"/>
                                     <constraint firstItem="MVN-Kv-fyi" firstAttribute="leading" secondItem="1gf-ro-peR" secondAttribute="leading" constant="32" id="NZw-VC-6i7"/>
                                     <constraint firstItem="lHn-4t-9yg" firstAttribute="top" secondItem="1gf-ro-peR" secondAttribute="top" constant="102" id="VBh-vW-MZ5"/>
+                                    <constraint firstItem="mvb-VT-bdf" firstAttribute="top" secondItem="MVN-Kv-fyi" secondAttribute="bottom" constant="15" id="W2L-EW-aA5"/>
                                     <constraint firstItem="K5J-VS-Clw" firstAttribute="top" secondItem="1gf-ro-peR" secondAttribute="top" constant="40" id="Woo-9z-T0V"/>
+                                    <constraint firstItem="mvb-VT-bdf" firstAttribute="centerX" secondItem="1gf-ro-peR" secondAttribute="centerX" id="a21-ib-Qjd"/>
                                     <constraint firstAttribute="bottom" secondItem="lHn-4t-9yg" secondAttribute="bottom" constant="103" id="aga-a5-fV3"/>
                                     <constraint firstItem="K5J-VS-Clw" firstAttribute="leading" secondItem="1gf-ro-peR" secondAttribute="leading" constant="16" id="dhU-o9-4yh"/>
                                     <constraint firstItem="R9W-Hy-gXw" firstAttribute="leading" secondItem="1gf-ro-peR" secondAttribute="leading" constant="16" id="e2n-GX-Blr"/>
@@ -398,6 +430,7 @@
                                     <constraint firstAttribute="bottom" secondItem="MVN-Kv-fyi" secondAttribute="bottom" constant="85" id="j2V-YJ-cfT"/>
                                     <constraint firstAttribute="bottom" secondItem="R9W-Hy-gXw" secondAttribute="bottom" constant="38" id="pXY-Xl-sLB"/>
                                     <constraint firstItem="x3M-Jw-ww5" firstAttribute="top" secondItem="1gf-ro-peR" secondAttribute="top" constant="40" id="sYg-ZJ-RZg"/>
+                                    <constraint firstAttribute="bottom" secondItem="mvb-VT-bdf" secondAttribute="bottom" constant="35" id="tPN-CO-hPt"/>
                                     <constraint firstItem="MVN-Kv-fyi" firstAttribute="top" secondItem="1gf-ro-peR" secondAttribute="top" constant="100" id="tZg-dK-pEN"/>
                                     <constraint firstAttribute="bottom" secondItem="ABu-4G-7Tg" secondAttribute="bottom" constant="38" id="zx1-JR-lej"/>
                                 </constraints>
