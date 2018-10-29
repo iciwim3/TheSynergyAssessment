@@ -13,26 +13,23 @@ class AssessmentVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     var model = AssessmentModel()
     var statements = [Assessment]()
     var statementIndex = 0
-    var catalystIndex = 0
-    var analystIndex = 0
-    var stabilizerIndex = 0
-    var harmonizerIndex = 0
+    var counterIndex = 0
     
-    var assessmentCell = AssessmentCell()
+    var assessProps = AssessmentCell()
     
     @IBOutlet weak var statementTableview: UITableView!
     @IBOutlet weak var dialogView: UIView!
-    @IBOutlet weak var nextButton: RoundedButton!
     @IBOutlet weak var assessmentStackView: UIStackView!
+    @IBOutlet weak var nextButton: RoundedButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Disable the next button
+        nextButton.isEnabled = false
+        
         // Hide the assessment stack view
         assessmentStackView.isHidden = true
-        
-        // Hide the assessment's next button
-        nextButton.isHidden = true
         
         // Set self as delegate for model and call getStatements
         model.delegate = self
@@ -41,6 +38,10 @@ class AssessmentVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         // Conform to table view protocols
         statementTableview.delegate = self
         statementTableview.dataSource = self
+        
+        // Configure tableview for dynamic row height
+        statementTableview.estimatedRowHeight = 120
+        statementTableview.rowHeight = UITableView.automaticDimension
     }
     
     func displayStatements() {
@@ -74,11 +75,15 @@ class AssessmentVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         return statements[statementIndex].statements!.count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: STATEMENT_CELL, for: indexPath)
         
         // Get the label
-        let label = cell.viewWithTag(1) as! UILabel
+        let label = cell.viewWithTag(5) as! UILabel
         
         // Set the text for the label
         label.text = statements[statementIndex].statements![indexPath.row]
@@ -86,17 +91,11 @@ class AssessmentVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        // User has selected an answer
-        
-    }
-    
     // MARK: - AssessmentProtocol methods
     
     func retrieveAssessment(statements: [Assessment]) {
         
-        // set our questions property with the questions from quiz model
+        // Set our statements property with the statements from assessment model
         self.statements = statements
         
         // Display the first few statements
@@ -110,7 +109,14 @@ class AssessmentVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         // Show the Assessment view
         assessmentStackView.isHidden = false
         
-        // Show the Next button
-        nextButton.isHidden = false
     }
+    
+    @IBAction func nextButtonTapped(_ sender: Any) {
+        if assessProps.counter >= 4 {
+            nextButton.isEnabled = true
+        }
+        statementIndex += 1
+        displayStatements()
+    }
+    
 }

@@ -16,6 +16,8 @@ class AssessmentModel {
     
     var delegate: AssessmentProtocol?
     
+    var assessCell = AssessmentCell()
+    
     func getStatements() {
         
         // Go retrieve data

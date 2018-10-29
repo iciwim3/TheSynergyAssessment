@@ -17,6 +17,7 @@
 		4381B0CF217AD35500D14210 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4381B0CE217AD35500D14210 /* FirstVC.swift */; };
 		439EFED22181D95700426CC1 /* AssessmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439EFED12181D95700426CC1 /* AssessmentVC.swift */; };
 		43C5C4A62182C0CE00FA6AAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5C4A52182C0CE00FA6AAE /* Constants.swift */; };
+		43D5A8AF2186338C008C3504 /* AssessmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5A8AE2186338C008C3504 /* AssessmentCell.swift */; };
 		43EFC109217BCDF30054ADFE /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EFC108217BCDF30054ADFE /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		4381B0CE217AD35500D14210 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
 		439EFED12181D95700426CC1 /* AssessmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentVC.swift; sourceTree = "<group>"; };
 		43C5C4A52182C0CE00FA6AAE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		43D5A8AE2186338C008C3504 /* AssessmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentCell.swift; sourceTree = "<group>"; };
 		43EFC108217BCDF30054ADFE /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 				4319DCE42185F6AE00BDC498 /* StatementData.json */,
 				43EFC108217BCDF30054ADFE /* RoundedButton.swift */,
 				4381B0C0217AC4CD00D14210 /* Main.storyboard */,
+				43D5A8AE2186338C008C3504 /* AssessmentCell.swift */,
 				4381B0C3217AC4D100D14210 /* Assets.xcassets */,
 				4381B0C5217AC4D100D14210 /* LaunchScreen.storyboard */,
 				4381B0C8217AC4D100D14210 /* Info.plist */,
@@ -159,6 +162,7 @@
 				439EFED22181D95700426CC1 /* AssessmentVC.swift in Sources */,
 				4381B0CF217AD35500D14210 /* FirstVC.swift in Sources */,
 				4381B0BD217AC4CD00D14210 /* AppDelegate.swift in Sources */,
+				43D5A8AF2186338C008C3504 /* AssessmentCell.swift in Sources */,
 				43EFC109217BCDF30054ADFE /* RoundedButton.swift in Sources */,
 				4368E93E21850C18005BB862 /* AssessmentModel.swift in Sources */,
 			);
