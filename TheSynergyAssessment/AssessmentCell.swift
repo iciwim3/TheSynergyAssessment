@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol UpdateCounter {
+    func incrementCounter()
+    func decrementCounter()
+}
+
 class AssessmentCell: UITableViewCell {
 
     @IBOutlet weak var button1: RoundedButton!
@@ -19,6 +24,8 @@ class AssessmentCell: UITableViewCell {
     var score = 0
     var counter = 0
     
+    var delegate: UpdateCounter?
+    
     var catalystScore = 0
     var analystScore = 0
     var stabilizerScore = 0
@@ -29,49 +36,14 @@ class AssessmentCell: UITableViewCell {
     }
     
     @IBAction func numberButtonPressed(_ sender: RoundedButton) {
-        switch sender {
-        case button1:
-            counter += 1
-            score = score + ButtonValues.one.rawValue
-            disableButtons()
-            print("Your score is \(score) and the counter is at \(counter).")
-     
-        case button2:
-            counter += 1
-            score = score + ButtonValues.two.rawValue
-            disableButtons()
-            print("Your score is \(score) and the counter is at \(counter).")
-            
-        case button3:
-            counter += 1
-            score = score + ButtonValues.three.rawValue
-            disableButtons()
-            print("Your score is \(score) and the counter is at \(counter).")
-            
-        case button4:
-            counter += 1
-            score = score + ButtonValues.four.rawValue
-            disableButtons()
-            print("Your score is \(score) and the counter is at \(counter).")
-            
-        default:
-            return
-        }
+        delegate?.incrementCounter()
+        disableButtons()
     }
     
-    func addCounter() -> Int {
-        let num = 1
-        counter += num
-        return counter
-    }
     
     @IBAction func clearButtonTapped(_ sender: RoundedButton) {
-        if counter >= 1 {
-            reenableButtons()
-            counter -= 1
-        } else {
-            return
-        }
+        delegate?.decrementCounter()
+        reenableButtons()
     }
     
     func reenableButtons() {

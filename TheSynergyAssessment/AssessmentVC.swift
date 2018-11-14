@@ -8,14 +8,12 @@
 
 import UIKit
 
-class AssessmentVC: UIViewController, UITableViewDelegate, UITableViewDataSource, AssessmentProtocol {
+class AssessmentVC: UIViewController, AssessmentProtocol {
     
     var model = AssessmentModel()
     var statements = [Assessment]()
     var statementIndex = 0
     var counterIndex = 0
-    
-    var assessProps = AssessmentCell()
     
     @IBOutlet weak var statementTableview: UITableView!
     @IBOutlet weak var dialogView: UIView!
@@ -40,7 +38,7 @@ class AssessmentVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         statementTableview.dataSource = self
         
         // Configure tableview for dynamic row height
-        statementTableview.estimatedRowHeight = 120
+        statementTableview.estimatedRowHeight = 100
         statementTableview.rowHeight = UITableView.automaticDimension
     }
     
@@ -65,32 +63,6 @@ class AssessmentVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         return .lightContent
     }
     
-    // Tableview protocol methods
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        guard statements.count > 0 && statements[statementIndex].statements != nil else {
-            return 0
-        }
-        
-        return statements[statementIndex].statements!.count
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: STATEMENT_CELL, for: indexPath)
-        
-        // Get the label
-        let label = cell.viewWithTag(5) as! UILabel
-        
-        // Set the text for the label
-        label.text = statements[statementIndex].statements![indexPath.row]
-        
-        return cell
-    }
-    
     // MARK: - AssessmentProtocol methods
     
     func retrieveAssessment(statements: [Assessment]) {
@@ -112,11 +84,53 @@ class AssessmentVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     }
     
     @IBAction func nextButtonTapped(_ sender: Any) {
-        if assessProps.counter >= 4 {
-            nextButton.isEnabled = true
-        }
-        statementIndex += 1
-        displayStatements()
+        
     }
     
+}
+
+extension AssessmentVC: UITableViewDelegate, UITableViewDataSource {
+    // Tableview protocol methods
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        guard statements.count > 0 && statements[statementIndex].statements != nil else {
+            return 0
+        }
+        
+        return statements[statementIndex].statements!.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: STATEMENT_CELL, for: indexPath) as! AssessmentCell
+        cell.delegate = self
+        
+        // Get the label
+        let label = cell.viewWithTag(5) as! UILabel
+        
+        // Set the text for the label
+        label.text = statements[statementIndex].statements![indexPath.row]
+        
+        return cell
+    }
+}
+
+extension AssessmentVC: UpdateCounter {
+    
+    func decrementCounter() {
+        if counterIndex >= 1 {
+            counterIndex -= 1
+        } else {
+            return
+        }
+    }
+
+    func incrementCounter() {
+        counterIndex += 1
+        print("Counter is at: \(counterIndex).")
+    }
+
 }
