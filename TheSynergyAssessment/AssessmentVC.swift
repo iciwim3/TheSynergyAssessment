@@ -8,8 +8,12 @@
 
 import UIKit
 
+protocol NextButton {
+    func enableButtons()
+}
+
 class AssessmentVC: UIViewController, AssessmentProtocol {
-    
+
     var model = AssessmentModel()
     var statements = [Assessment]()
     var statementIndex = 0
@@ -84,7 +88,9 @@ class AssessmentVC: UIViewController, AssessmentProtocol {
     }
     
     @IBAction func nextButtonTapped(_ sender: Any) {
-        
+        counterIndex = 0
+        statementIndex += 1
+        statementTableview.reloadData()
     }
     
 }
@@ -111,7 +117,7 @@ extension AssessmentVC: UITableViewDelegate, UITableViewDataSource {
         // Get the label
         let label = cell.viewWithTag(5) as! UILabel
         
-        // Set the text for the label
+        // Set the text for the labels
         label.text = statements[statementIndex].statements![indexPath.row]
         
         return cell
@@ -126,10 +132,16 @@ extension AssessmentVC: UpdateCounter {
         } else {
             return
         }
+        if counterIndex != 4 {
+            nextButton.isEnabled = false
+        }
     }
 
     func incrementCounter() {
         counterIndex += 1
+        if counterIndex == 4 {
+            nextButton.isEnabled = true
+        } 
         print("Counter is at: \(counterIndex).")
     }
 

@@ -40,12 +40,11 @@ class AssessmentCell: UITableViewCell {
         disableButtons()
     }
     
-    
     @IBAction func clearButtonTapped(_ sender: RoundedButton) {
         delegate?.decrementCounter()
         reenableButtons()
     }
-    
+
     func reenableButtons() {
         button1.isEnabled = true
         button2.isEnabled = true
